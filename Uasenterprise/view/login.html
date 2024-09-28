@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../asset/speed_show.png" />
+    <link rel="stylesheet" href="../style/bootstrap.css" />
+    <title>Speed Showroom</title>
+  </head>
+  <body class="container-fluid h-100 p-0">
+    <div class="row m-0 justify-content-between">
+      <div
+        style="height: 100vh;"
+        class="col-12 col-sm-12 col-lg-6 p-0 d-flex flex-column justify-content-center align-items-center"
+      >
+        <section class="col-11 col-md-9 col-lg-7">
+          <h2 class="fw-bold" style="color: #f5a841;">Welcome back!</h2>
+          <p class="textSecondaryColor fw-normal">
+            Login for another awesome information
+          </p>
+          <form action="login.php" method="POST">
+            <ul class="p-0">
+              <li class="list-unstyled">
+                <label for="email">Email</label><br />
+                <input
+                  class="form-control border-0 w-100 bg-light rounded-2 py-2 ps-3"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </li>
+              <li class="list-unstyled mt-3">
+                <label for="password">Password</label><br />
+                <input
+                  class="form-control border-0 w-100 bg-light rounded-2 py-2 ps-3"
+                  type="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  required
+                />
+              </li>
+              <li class="list-unstyled mt-3">
+                <input type="checkbox" name="remember" />
+                <label for="remember">Remember me</label>
+              </li>
+              <li class="list-unstyled mt-4">
+                <button type="submit" style="background-color:#f5a841" class="btn w-100 py-2 rounded-3 text-light">
+                  Login
+                </button>
+              </li>
+              <li class="list-unstyled mt-2">
+                <p class="textSecondaryColor">
+                  Don't have an account?
+                  <a href="register.html" class="text-decoration-none" style="color: #f5a841;">Register</a>
+                </p>
+              </li>
+            </ul>
+          </form>
+        </section>
+      </div>
+      <div
+        style="
+          height: 100vh !important;
+          background-image: url('../asset/loginBanner.webp');
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+        class="col-6 d-none d-lg-block p-0"
+      ></div>
+    </div>
+  </body>
+</html>
